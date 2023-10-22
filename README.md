@@ -1,73 +1,75 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+---
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+# TelegramBot-Cruncyroll
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+A Telegram bot designed to verify Crunchyroll accounts.
 
-## Description
+## Table of Contents
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- [Setup](#setup)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Development](#development)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Installation
+## Setup
 
-```bash
-$ npm install
-```
+1. Clone the repository:
+   ```
+   git clone https://github.com/MAYKELL07/TelegramBot-Cruncyroll.git
+   ```
 
-## Running the app
+2. Navigate to the project directory:
+   ```
+   cd TelegramBot-Cruncyroll
+   ```
 
-```bash
-# development
-$ npm run start
+3. Install the required dependencies:
+   ```
+   npm install
+   ```
 
-# watch mode
-$ npm run start:dev
+## Usage
 
-# production mode
-$ npm run start:prod
-```
+1. Start the bot:
+   ```
+   npm start
+   ```
 
-## Test
+2. Interact with the bot on Telegram.
 
-```bash
-# unit tests
-$ npm run test
+## Configuration
 
-# e2e tests
-$ npm run test:e2e
+- **Bot Token**: Ensure you replace the placeholder token in [main.ts](https://github.com/MAYKELL07/TelegramBot-Cruncyroll/blob/main/src/main.ts) with your actual bot token.
 
-# test coverage
-$ npm run test:cov
-```
+- **ESLint Configuration**: The project uses ESLint for linting. Configuration can be found in [.eslintrc.js](https://github.com/MAYKELL07/TelegramBot-Cruncyroll/blob/main/.eslintrc.js).
 
-## Support
+- **Prettier Configuration**: The project uses Prettier for code formatting. Configuration can be found in [.prettierrc](https://github.com/MAYKELL07/TelegramBot-Cruncyroll/blob/main/.prettierrc).
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+## Development
 
-## Stay in touch
+- **NestJS**: The bot is built using NestJS. Configuration for Nest CLI can be found in [nest-cli.json](https://github.com/MAYKELL07/TelegramBot-Cruncyroll/blob/main/nest-cli.json).
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- **TypeScript Configuration**: The project is written in TypeScript. Configuration can be found in [tsconfig.json](https://github.com/MAYKELL07/TelegramBot-Cruncyroll/blob/main/tsconfig.json) and [tsconfig.build.json](https://github.com/MAYKELL07/TelegramBot-Cruncyroll/blob/main/tsconfig.build.json).
+
+## Testing
+
+- **Unit Tests**: Unit tests for the tasks service can be found in [tasks.service.spec.ts](https://github.com/MAYKELL07/TelegramBot-Cruncyroll/blob/main/src/tasks/tasks.service.spec.ts) and for the tasks controller in [tasks.controller.spec.ts](https://github.com/MAYKELL07/TelegramBot-Cruncyroll/blob/main/src/tasks/tasks.controller.spec.ts).
+
+- **End-to-End Tests**: E2E tests can be found in [app.e2e-spec.ts](https://github.com/MAYKELL07/TelegramBot-Cruncyroll/blob/main/test/app.e2e-spec.ts).
+
+- **Jest Configuration**: The project uses Jest for testing. Configuration can be found in [jest-e2e.json](https://github.com/MAYKELL07/TelegramBot-Cruncyroll/blob/main/test/jest-e2e.json).
+
+## Contributing
+
+Contributions are welcome! Please ensure you follow the coding standards set by ESLint and Prettier.
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+---
+
+**Note**: Ensure you keep sensitive information like bot tokens private and not hardcoded in the repository for security reasons.
+
+---
