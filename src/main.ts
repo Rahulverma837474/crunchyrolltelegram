@@ -1,7 +1,7 @@
 import { Telegraf } from 'telegraf';
 import { TasksService } from './tasks/tasks.service';
 
-const BOT_TOKEN = '6628981381:AAGosTCmeocMVsJXxyGadpe2luFr0pZeCj8'; // Replace with your bot token
+const BOT_TOKEN = '6798601503:AAG2g_6rUaMz_a3xN8vwhPktK2QGtvi3Yb8'; // Replace with your bot token
 const bot = new Telegraf(BOT_TOKEN);
 const tasksService = new TasksService();
 
